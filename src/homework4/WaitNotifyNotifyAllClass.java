@@ -23,7 +23,7 @@ public class WaitNotifyNotifyAllClass {
             synchronized (mon) {
                 try {
                     for (int i = 0; i < 5; i++) {
-                        while (currentLetter != 'A') {
+                        while (currentLetter != 'A') {//currentLetter указывает на букву, которая должна быть отпечатана;
                             mon.wait();
                         }
                         System.out.print("A");
